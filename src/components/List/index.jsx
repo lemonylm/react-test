@@ -1,16 +1,15 @@
-import React, { Component } from 'react'
-import Item from '../Item'
-import './index.css'
+import React, { Component } from "react";
+import Item from "../Item";
+import "./index.css";
 export default class List extends Component {
-    render() {
-        return (
-            <ul className="todo-main">
-          <Item></Item>
-          <Item></Item>
-          <Item></Item>
-          <Item></Item>
-          <Item></Item>
-          </ul>
-        )
-    }
+  render() {
+    const { todos } = this.props;
+    return (
+      <ul className="todo-main">
+        {todos.map((item) => {
+          return <Item key={item.id} {...item} />;
+        })}
+      </ul>
+    );
+  }
 }
