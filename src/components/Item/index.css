@@ -9,10 +9,10 @@
 /* .todo-main li:hover {
   background-color: skyblue;
 } */
-/* .todo-main li:hover button {
+.todo-main li:hover button {
   opacity: 1;
   transition: all 1s;
-} */
+}
 .todo-main li label {
   float: left;
   cursor: pointer;
