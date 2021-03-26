@@ -50,6 +50,8 @@ export default class App extends Component {
             changeTodo={this.changeTodo}
             singleDelete={this.singleDelete}
           />
+
+          
           <Footer todos={todos} deleteAll={this.deleteAll} />
         </div>
       </div>
